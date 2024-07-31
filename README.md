@@ -81,8 +81,6 @@
 
 以下はコピー＆ペーストできる例です：
 
-#### 英語
-
 <pre>&lt;script src="feedback.js"&gt;&lt;/script&gt;
 &lt;script&gt;
 		Namespace.gaf.init( {
@@ -95,23 +93,6 @@
 		'placeholder': 'Please enter your feedback here&hellip;',
 		'send': 'Send',
 		'thankyou': 'Thank you for your feedback!'
-	} );
-&lt;/script&gt;</pre>
-
-#### スペイン語
-
-<pre>&lt;script src="feedback.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-		Namespace.gaf.init( {
-		'open': 'Feedback',
-		'title': 'Nos encantaría conocer tu feedback:',
-		'option1': 'Problema',
-		'option2': 'Sugerencia',
-		'option3': 'Cumplido',
-		'option4': 'Otro',
-		'placeholder': 'Por favor, escribe aquí tu feedback&hellip;',
-		'send': 'Enviar',
-		'thankyou': '¡Gracias por tu feedback!'
 	} );
 &lt;/script&gt;</pre>
 
