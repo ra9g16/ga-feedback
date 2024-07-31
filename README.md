@@ -1,95 +1,87 @@
+# Google Analytics フィードバックウィジェット
 
-# Google Analytics Feedback Widget
+## Google Analyticsを使ってフィードバックを受け取る
 
-## Receive Feedback simply by using Google Analytics
+![フィードバックダッシュボード](https://cloud.githubusercontent.com/assets/141241/6202018/df394a10-b4ce-11e4-9b75-047aaf44c511.png)
 
-![Feedback dashboard](https://cloud.githubusercontent.com/assets/141241/6202018/df394a10-b4ce-11e4-9b75-047aaf44c511.png)
+登録や制限、月額料金を気にせず、無料で無制限にフィードバックを収集できるウィジェットです。
 
-Free and unlimited widget to gather feedback without having to register in any website, worry about limitations or pay any monthly fees.
+* 無料で無制限のフィードバック
+* Google Analyticsデータと統合
+* 1KBのサイズ（圧縮済み）で依存関係なし
+* 簡単にインストール
+* モバイル対応
+* 毎日のメール + 高度なレポート
+* 完全なカスタマイズ + 多言語対応
 
-* Free and unlimited feedback
-* Integrated with your Google Analytics data
-* Just 1KB in size (gzipped) and no dependencies
-* Easy to install
-* Mobile-ready
-* Daily emails + Advanced reports
-* Full customization + Multilanguage
+必要なのはGoogle Analyticsを使うことだけで、jQueryや他の依存関係は必要ありません。
 
-The only thing you need is to use Google Analytics, no jQuery or other dependiencies are needed.
+このプラグインは完全にカスタマイズ可能で、複数の言語をサポートしており、デスクトップ、モバイル、タブレットデバイスで動作します。サイズはわずか1KBです。
 
-The plugin is fully customizable, supports multiple languages and works in Desktop, mobile and tablet devices. It has been coded to be extremely tiny at just 1KB.
+ライブデモはこちらでご覧いただけます: <a href="http://trendliker.com/">trendliker.com</a>
 
-You can see a live demo here: <a href="http://trendliker.com/">trendliker.com</a>
+## 使い方
 
+プラグインはページの右下に固定ボタンを配置します:
 
+![フィードバックボタン](https://cloud.githubusercontent.com/assets/141241/6185187/ce03b870-b36b-11e4-86a7-a6ef880f95ec.png)
 
-## How it works
+クリックすると、フィードバックフォームが表示されます:
 
+![フィードバックダイアログ](https://cloud.githubusercontent.com/assets/141241/6185199/f122f686-b36b-11e4-8858-fb8869824b82.png)
 
-The plugin places a sticky button at the bottom right of the page:
+ユーザーはフィードバックの種類を選択し、テキストボックスに記入できます。<em>送信</em>をクリックすると、感謝のメッセージが表示され、ダイアログが消えます。
 
-![Feedback button](https://cloud.githubusercontent.com/assets/141241/6185187/ce03b870-b36b-11e4-86a7-a6ef880f95ec.png)
+すべてのメッセージはGoogle Analyticsの「フィードバック」イベントとして保存されます。
 
-Once clicked, it shows a Feedback form:
+## フィードバックダッシュボード
 
-![Feedback dialog](https://cloud.githubusercontent.com/assets/141241/6185199/f122f686-b36b-11e4-8858-fb8869824b82.png)
+フィードバックウィジェットダッシュボードは、ユーザーのフィードバックをテーブルで表示する既製のダッシュボードです（これらはユーザーごとのセッション数でソートされているため、アクティブなユーザーが最初に表示されます）。右側の列には、円グラフや受け取ったフィードバックのタイムラインなどがあります。
 
-The user can select what type of feedback to send and fill in a text box. Once the user clicks <em>Send</em> a Thank you message shows up and the dialog disappears.
+<a href="https://www.google.com/analytics/web/template?uid=DcXKkhvbT1GSHHcOrdkGoA">ここをクリックしてこのダッシュボードを入手</a>して、後でさらにカスタマイズできます。
 
-All messages are saved as "Feedback" Events in Google Analytics.
+![フィードバックダッシュボード](https://cloud.githubusercontent.com/assets/141241/6202018/df394a10-b4ce-11e4-9b75-047aaf44c511.png)
 
+## 毎日メールで結果を受け取る
 
-## Feedback Dashboard
+ダッシュボードの上部に<em>メール</em>ボタンがあります。これをクリックしてダッシュボードをメールで受け取ります。日次、週次、月次レポートをカスタマイズして、自分やチームに送信できます。
 
-The Feedback widget dashboard is a readymade dashboard that displays user's feedback in tables (these are sorted by Number of Sessions per User so more active users show up first). The right column has a few other things like a pie chart and a timeline of all feedback received.
+![毎日のメール](https://cloud.githubusercontent.com/assets/141241/6202046/85f10072-b4d0-11e4-9bd6-d5f9c7c7f677.png)
 
-<a href="https://www.google.com/analytics/web/template?uid=DcXKkhvbT1GSHHcOrdkGoA">Click here to get this Dashboard</a>, it's a great starting point and you can customize it further later, keep reading to see how.
+### 小規模サイト向けの適時アラート
 
-![Feedback dashboard](https://cloud.githubusercontent.com/assets/141241/6202018/df394a10-b4ce-11e4-9b75-047aaf44c511.png)
+毎日メールを受け取りたくない場合は、Google Analyticsには<em>インテリジェンスイベント</em>の<em>アラート</em>機能があり、特定の事象が発生したときにメールを受け取ることができます。以下の例では、フィードバックが提出されたときに毎日メールを受け取ります。
 
-## Get results by email every day
+![インテリジェンスイベント](https://cloud.githubusercontent.com/assets/141241/6192851/649201c6-b3b6-11e4-9b0a-b15783c18b01.png)
 
-At the top of the Dashboard there's an <em>Email</em> button, click it to get an email with the Dashboard. You can customize Daily, Weekly, Monthly reports and also send it to you and your team:
+10人以上がフィードバックを提出したときにのみメールを受け取る、フィルタリングして「問題」だけを受け取る、再訪問者からのフィードバックだけを受け取る、米国からのフィードバックだけを受け取る、「エラー」という単語を含むフィードバックだけを受け取る、Firefoxを使用しているユーザーからのフィードバックだけを受け取るなどの設定ができます。
 
-![Daily email](https://cloud.githubusercontent.com/assets/141241/6202046/85f10072-b4d0-11e4-9bd6-d5f9c7c7f677.png)
+### カスタマイズと詳細
 
+フィードバックの提出はGoogle Analyticsのイベントとして保存されます（<em>レポート</em> > <em>行動</em> > <em>イベント</em>）。
 
-### Occasional alert for small sites
+- **イベントカテゴリー**: <code>Feedback</code>
+- **イベントアクション**: <code>Problem</code>, <code>Suggestion</code>, <code>Compliment</code> または <code>Other</code>
+- **イベントラベル**: ユーザーのフィードバック
+- **イベント値**: <code>1</code>
 
-If you don't want to receive an email every day, Google Analytics has got a feature called <em>Alerts</em> in <em>Intelligence Events</em> which allow you to receive emails when certain things happen. In the example below we receive a daily email when Feedback is submitted:
+#### イベントアクション
 
-![Intelligence Events](https://cloud.githubusercontent.com/assets/141241/6192851/649201c6-b3b6-11e4-9b0a-b15783c18b01.png)
+![Google Analytics イベントアクション](https://cloud.githubusercontent.com/assets/141241/6185994/6abf609e-b374-11e4-8e4c-7501001007e5.png)
 
-You can choose to get an email only when more than 10 people submitted feedback, or filter only "Problems", or just get feedback from returning visitors, or from people that are in the US, or feedbacks that include the word "error", or feedback from users using Firefox...
+#### イベントラベル
 
-### Customization and detail
+![Google Analytics イベントラベル](https://cloud.githubusercontent.com/assets/141241/6186019/b39a9fae-b374-11e4-8c98-a1c0ebb52949.png)
 
-Feedback submissions are saved as Events in Google Analytics (<em>Reporting</em> > <em>Behaviour</em> > <em>Events</em>).
+## ウェブサイトに設定する
 
-- **Events Category**: <code>Feedback</code>
-- **Events Action**: <code>Problem</code>, <code>Suggestion</code>, <code>Compliment</code> or <code>Other</code>
-- **Events Label**: User's feedback
-- **Events Value**: <code>1</code>
+1. Google Analyticsコードの後に<code>feedback.js</code>ファイルを読み込みます。
+2. パラメーターでフィードバックウィジェットを初期化します。
+3. 完了 :)
 
-#### Event Actions
+以下はコピー＆ペーストできる例です：
 
-![Google Analytics Events Action](https://cloud.githubusercontent.com/assets/141241/6185994/6abf609e-b374-11e4-8e4c-7501001007e5.png)
-
-#### Event Labels
-
-![Google Analytics Events Label](https://cloud.githubusercontent.com/assets/141241/6186019/b39a9fae-b374-11e4-8c98-a1c0ebb52949.png)
-
-
-## Setting it up in your website
-
-
-1. Load the <code>feedback.js</code> file after the Google Analytics code
-2. Initialize the Feedback widget with your parameters
-3. Done :)
-
-Here's a couple examples you can copy-paste:
-
-#### English
+#### 英語
 
 <pre>&lt;script src="feedback.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -106,8 +98,7 @@ Here's a couple examples you can copy-paste:
 	} );
 &lt;/script&gt;</pre>
 
-
-#### Spanish
+#### スペイン語
 
 <pre>&lt;script src="feedback.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -124,17 +115,16 @@ Here's a couple examples you can copy-paste:
 	} );
 &lt;/script&gt;</pre>
 
+### 高度な手動トリガー
 
-### Advanced manual triggers
-
-You can load the Feedback form and control the Feedback widget from any other script in your site by accessing the <code>gaf</code> namespace. For example, to show the Feedback dialog window you can run this:
+サイト内の他のスクリプトからフィードバックフォームをロードし、フィードバックウィジェットを制御できます。例えば、フィードバックダイアログウィンドウを表示するには、以下を実行します：
 
 <pre>Namespace.gaf.loadDialog();</pre>
 
-## Monthly reports and more...
+## 毎月のレポートなど...
 
-You now have a full Feedback website tool for free, and what's more awesome is that it is already built into Google Analytics with the rest of your website's traffic data. You can add it to your Dashboard, create reports on % of bugs reported, user satisfaction vs number of visits, etc... Be creative!
+これで、無料のフィードバックウェブサイトツールを手に入れました。さらに素晴らしいのは、既にGoogle Analyticsの他のトラフィックデータと統合されていることです。ダッシュボードに追加したり、バグ報告の割合、訪問数に対するユーザー満足度などのレポートを作成したりすることができます。クリエイティブに活用してください！
 
 <hr>
 
-Built by <a href="http://xaviesteve.com">Xavi</a>. Feel free to create issues, pull requests or send me suggestions and ideas on how to improve the Dashboard, etc.
+<a href="http://xaviesteve.com">Xavi</a>が構築しました。問題の報告やプルリクエスト、ダッシュボードの改善に関する提案やアイデアを送ってください。
